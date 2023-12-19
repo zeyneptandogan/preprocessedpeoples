@@ -21,17 +21,11 @@ author: Adam, Berke, Nazlican & Zeynep
 
 
 navbar-links:
-  ada project: "Preprocessed Peoples"
+  About Us: "aboutme"
   Resources:
     - Dataset: "https://www.cs.cmu.edu/~ark/personas/"
     - Repository: "https://github.com/zeyneptandogan/preprocessedpeoples.github.io"
 
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Repository: "https://github.com/zeyneptandogan/preprocessedpeoples.github.io"
 
 ################
 # --- Logo --- #
