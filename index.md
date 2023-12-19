@@ -25,14 +25,14 @@ share-img: /assets/img/header.png
 <div style="text-align: justify">
     <p><strong>Additional Datasets:</strong> To perform detailed analysis, we preferred to use datasets that will support our analysis.</p>
     <p>1) Data collection by us:</p>
-    <p>We collected additional data by following the below steps:</p>
+    <p class="tight-paragraph">We collected additional data by following the below steps:</p>
     <ul>
         <li>Dataset creation using Freebase IDs and Wikidata API to extract IMDb IDs.</li>
         <li>Utilization of the TMDB API for acquiring gender information of cast and crew members.</li>
     </ul>
-    <p>The results are stored in movie_with_gender_info.csv file, that can be found in the repository.</p>
+    <p class="tight-paragraph">The results are stored in movie_with_gender_info.csv file, that can be found in the repository.</p>
     <p>2) Oscar Awards Dataset from Kaggle: </p>
-    <p>Analyzing Oscar awards data by gender, focusing on nominee and winner gender proportions, revealing industry gender biases and progress towards equality in film awards. The dataset can be found in <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award/data?select=the_oscar_award.csv">Oscar Award Dataset</a></p>
+    <p class="tight-paragraph">Analyzing Oscar awards data by gender, focusing on nominee and winner gender proportions, revealing industry gender biases and progress towards equality in film awards. The dataset can be found in <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award/data?select=the_oscar_award.csv">Oscar Award Dataset</a></p>
     <p>3) IMDB Rating Dataset:</p>
     <p>As a success measure, IMBD ratings are used in the analysis. The data is taken from IMDB Non-commercial datasets. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are utilized for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></p>
 </div>
@@ -40,9 +40,9 @@ share-img: /assets/img/header.png
 ## Research Questions
 <div style="text-align: justify">
     In the scope of this analysis, we will try to answer the following research questions:
-    <p>1) How does gender impact actors' career opportunities, collaborations and success, particularly in terms of the types of role and reward opportunities offered?</p>
-    <p>2) Do plot summaries contain any gender stereotypes, and if so, in what manner?</p>
-    <p>3) Does semantic analysis of character types reveal any distinct differences in the assignment of roles based on gender?</p>
-    <p>4) Does the gender composition of cast and crew influence the critical success of films, evaluated by IMDb ratings?</p>
-    <p>5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</p>
+    <p class="tight-paragraph">1) How does gender impact actors' career opportunities, collaborations and success, particularly in terms of the types of role and reward opportunities offered?</p>
+    <p class="tight-paragraph">2) Do plot summaries contain any gender stereotypes, and if so, in what manner?</p>
+    <p class="tight-paragraph">3) Does semantic analysis of character types reveal any distinct differences in the assignment of roles based on gender?</p>
+    <p class="tight-paragraph">4) Does the gender composition of cast and crew influence the critical success of films, evaluated by IMDb ratings?</p>
+    <p class="tight-paragraph">5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</p>
 </div>
