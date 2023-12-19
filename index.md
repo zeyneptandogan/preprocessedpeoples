@@ -59,19 +59,26 @@ share-img: /assets/img/header.png
 
 {% include gender_time.html %}
 
-### 1) How does gender impact actors' career opportunities, collaborations and success, particularly in terms of the types of role and reward opportunities offered?
+### Gender Impact on Actors' Career Opportunities, Collaborations and Success
 
 <h2>Analysis for Reward Opportunities based on Gender</h2>
 
 <div style="text-align: justify">
 In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dataset. 
-</div>
+</div><br>
 
 | Gender      | Not Nominated | Nominated | Won |
 |-------------|---------------|-----------|-----|
 | **Females** | 48,374        | 124       | 38  |
 | **Males**   | 84,692        | 118       | 33  |
 
-continuee
+<div style="text-align: justify">The number of actors that nominated/win Oscars at least once are 151. There are also actors that are nominated multiple times, even  one actor is nominated/win at most 11 times in the dataset. After this, we got each actors' first nomination year and calculate the number of movies they appeared before and after their first nomination seperating based on gender.</div>
+<h3>Average Number of Films Before and After Nomination by Actor Gender</h3>
+
+| Actor Gender | Average Films Before Nomination | Average Films After Nomination |
+|--------------|---------------------------------|--------------------------------|
+| F            | 9.47                            | 12.96                          |
+| M            | 12.38                           | 21.09                          |
 
 
+<div style="text-align: justify">Based on the averages, it is seen that male actors have higher average of apperances with 12.38 films whereas the female actors have the apparence in 9.47 film on average before their first Oscar nomination or win. After the award nomination or win, it is observed that the average gap of appearances between actors and actresses has increased, since the male actors significantly increase their average film count to 21.09 films.</div>
