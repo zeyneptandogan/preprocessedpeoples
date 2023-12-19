@@ -34,7 +34,7 @@ share-img: /assets/img/header.png
     <span>2) Oscar Awards Dataset from Kaggle: </span><br>
     <span>Analyzing Oscar awards data by gender, focusing on nominee and winner gender proportions, revealing industry gender biases and progress towards equality in film awards. The dataset can be found in <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award/data?select=the_oscar_award.csv">Oscar Award Dataset</a></span><br><br>
     <span>3) IMDB Rating Dataset:</span><br>
-    <span>As a success measure, IMBD ratings are used in the analysis. The data is taken from IMDB Non-commercial datasets. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are utilized for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></span><br><br>
+    <span>As a success measure, IMBD ratings are used in the analysis. The data is taken from IMDB Non-commercial datasets. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are utilized for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></span><br>
 </div>
 
 ## Research Questions
@@ -46,3 +46,7 @@ share-img: /assets/img/header.png
     <span>4) Does the gender composition of cast and crew influence the critical success of films, evaluated by IMDb ratings?</span><br>
     <span>5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</span><br>
 </div>
+
+# The Change in the Number of Movies in time
+
+{% include graphs/interactive_chart.html %}
