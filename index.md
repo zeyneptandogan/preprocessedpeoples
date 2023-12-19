@@ -59,9 +59,9 @@ share-img: /assets/img/header.png
 
 {% include gender_time.html %}
 
-### Gender Impact on Actors' Career Opportunities, Collaborations and Success
+## Gender Impact on Actors' Career Opportunities, Collaborations and Success
 
-<h2>Analysis for Reward Opportunities based on Gender</h2>
+<h3>Analysis for Reward Opportunities based on Gender</h3>
 
 <div style="text-align: justify">
 In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dataset. 
@@ -73,7 +73,7 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 | **Males**   | 84,692        | 118       | 33  |
 
 <div style="text-align: justify">The number of actors that nominated/win Oscars at least once are 151. There are also actors that are nominated multiple times, even  one actor is nominated/win at most 11 times in the dataset. After this, we got each actors' first nomination year and calculate the number of movies they appeared before and after their first nomination seperating based on gender.</div>
-<h3>Average Number of Films Before and After Nomination by Actor Gender</h3>
+<h4>Average Number of Films Before and After Nomination by Actor Gender</h4>
 
 | Actor Gender | Average Films Before Nomination | Average Films After Nomination |
 |--------------|---------------------------------|--------------------------------|
