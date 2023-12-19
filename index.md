@@ -11,7 +11,7 @@ share-img: /assets/img/header.png
     emotions. While doing this, movies generally focus on emotions such as sadness and joy and see the reflection of
     society. In this context, it struggles with the problem of gender bias, which is also seen in daily life. So how did
     this effort manifest itself in the process?
-
+    <br>
     Let's generally examine the status of gender representation in the movie
     industry from many aspects such as the effect on career trajectories and collaborative opportunities and its impact
     on the results obtained and its change over time.
