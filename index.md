@@ -84,7 +84,7 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 <div style="text-align: justify; margin-top: 10px;">Based on the averages, it is seen that male actors have higher average of apperances with 12.38 films whereas the female actors have the apparence in 9.47 film on average before their first Oscar nomination or win. After the award nomination or win, it is observed that the average gap of appearances between actors and actresses has increased, since the male actors significantly increase their average film count to 21.09 films.</div>
 
 <div class="img-container">
-    <img id="zoom-img" src="{{ 'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo">
+    <img id="zoom-img" src="{{'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo changed">
 </div>
 
 
