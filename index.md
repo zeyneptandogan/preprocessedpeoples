@@ -36,3 +36,13 @@ share-img: /assets/img/header.png
     <p>3) IMDB Rating Dataset:</p>
     <p>As a success measure, IMBD ratings are used in the analysis. The data is taken from IMDB Non-commercial datasets. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are utilized for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></p>
 </div>
+
+## Research Questions
+<div style="text-align: justify">
+    In the scope of this analysis, we will try to answer the following research questions:
+    1) How does gender impact actors' career opportunities, collaborations and success, particularly in terms of the types of role and reward opportunities offered? 
+    2) Do plot summaries contain any gender stereotypes, and if so, in what manner? 
+    3) Does semantic analysis of character types reveal any distinct differences in the assignment of roles based on gender? 
+    4) Does the gender composition of cast and crew influence the critical success of films, evaluated by IMDb ratings?
+    5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?
+</div>
