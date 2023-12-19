@@ -47,7 +47,7 @@ share-img: /assets/img/header.png
     <span>5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</span><br>
 </div>
 
-<h1>General Analysis based on Time</h1>
+## General Analysis based on Time
 
 <h2>The Change in the Number of Movies</h2>
 {% include interactive_chart.html %}
@@ -58,3 +58,20 @@ share-img: /assets/img/header.png
 <div style="text-align: justify"> We did the same time based analysis based on the gender. The below graph shows the number of female and male characters in the movies for the specific time interval. It is observed that in all times the number of male characters outnumbers the number of female characters. </div>
 
 {% include gender_time.html %}
+
+### 1) How does gender impact actors' career opportunities, collaborations and success, particularly in terms of the types of role and reward opportunities offered?
+
+<h2>Analysis for Reward Opportunities based on Gender</h2>
+
+<div style="text-align: justify">
+In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dataset. 
+</div>
+
+| Gender      | Not Nominated | Nominated | Won |
+|-------------|---------------|-----------|-----|
+| **Females** | 48,374        | 124       | 38  |
+| **Males**   | 84,692        | 118       | 33  |
+
+continuee
+
+
