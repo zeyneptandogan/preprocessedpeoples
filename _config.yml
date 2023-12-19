@@ -51,8 +51,6 @@ round-avatar: false
 # Uncomment the links you want to show and add your information to each one.
 
 
-
-
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
 rss-description: This website is designed for the ADA project of Preprocessed Peoples.
