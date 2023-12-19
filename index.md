@@ -19,7 +19,7 @@ share-img: /assets/img/header.png
 
 ## The Dataset
 <div style="text-align: justify">
-<strong>Additional Datasets:</strong>  CMU Movie Summary Corpus which is collected by the Machine Learning Department of Carnegie Mellon University. This data includes Movie metadata consists of release date, runtime, movie language, box office revenue, countries and Character metadata consists of character names, actors, gender, age at the time of movie release. In addition to this, they also provided plot summaries and Stanford CoreNLP-processed summaries which is the version of plot summaries that run through the Stanford CoreNLP pipeline.
+<strong>Main Dataset:</strong>  CMU Movie Summary Corpus which is collected by the Machine Learning Department of Carnegie Mellon University. This data includes Movie metadata consists of release date, runtime, movie language, box office revenue, countries and Character metadata consists of character names, actors, gender, age at the time of movie release. In addition to this, they also provided plot summaries and Stanford CoreNLP-processed summaries which is the version of plot summaries that run through the Stanford CoreNLP pipeline.
 </div>
 
 <div style="text-align: justify">
