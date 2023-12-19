@@ -40,9 +40,9 @@ share-img: /assets/img/header.png
 ## Research Questions
 <div style="text-align: justify">
     In the scope of this analysis, we will try to answer the following research questions:
-    1) How does gender impact actors' career opportunities, collaborations and success, particularly in terms of the types of role and reward opportunities offered? 
-    2) Do plot summaries contain any gender stereotypes, and if so, in what manner? 
-    3) Does semantic analysis of character types reveal any distinct differences in the assignment of roles based on gender? 
-    4) Does the gender composition of cast and crew influence the critical success of films, evaluated by IMDb ratings?
-    5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?
+    <p>1) How does gender impact actors' career opportunities, collaborations and success, particularly in terms of the types of role and reward opportunities offered?</p>
+    <p>2) Do plot summaries contain any gender stereotypes, and if so, in what manner?</p>
+    <p>3) Does semantic analysis of character types reveal any distinct differences in the assignment of roles based on gender?</p>
+    <p>4) Does the gender composition of cast and crew influence the critical success of films, evaluated by IMDb ratings?</p>
+    <p>5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</p>
 </div>
