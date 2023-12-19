@@ -95,7 +95,6 @@ let BeautifulJekyllJS = {
   },
   // Function to initialize the zoom effect
   initZoomEffect: function() {
-    document.addEventListener('DOMContentLoaded', function() {
       let imgContainer = document.querySelector('.img-container');
       let img = document.getElementById('zoom-img');
       let isZoomed = false;
@@ -123,7 +122,7 @@ let BeautifulJekyllJS = {
               img.style.transformOrigin = `${posX}% ${posY}%`;
           }
       });
-  });  
+  
   },
   getImgInfo : function() {
     const randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
