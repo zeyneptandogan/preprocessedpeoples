@@ -49,4 +49,4 @@ share-img: /assets/img/header.png
 
 # The Change in the Number of Movies in time
 
-{% include graphs/interactive_chart.html %}
+{% include interactive_chart.html %}
