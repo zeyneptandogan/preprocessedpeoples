@@ -47,6 +47,14 @@ share-img: /assets/img/header.png
     <span>5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</span><br>
 </div>
 
-# The Change in the Number of Movies in time
+<h1>General Analysis based on Time</h1>
 
+<h2>The Change in the Number of Movies</h2>
 {% include interactive_chart.html %}
+
+<div style="text-align: justify"> It is seen that there are movies between 1900 to 2016. However, between 2010 and 2015 it is observed that there is less value in contrast to the increasing trend in time. So, we decided to use the data which we have found more reliable which is 1900 to 2010.</div>
+
+<h2>The Change in the Number of Female vs Male Characters</h2>
+<div style="text-align: justify"> We did the same time based analysis based on the gender. The below graph shows the number of female and male characters in the movies for the specific time interval. It is observed that in all times the number of male characters outnumbers the number of female characters. </div>
+
+{% include gender_time.html %}
