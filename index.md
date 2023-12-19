@@ -65,7 +65,7 @@ share-img: /assets/img/header.png
 
 <div style="text-align: justify">
 In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dataset. 
-</div><br>
+</div>
 
 | Gender      | Not Nominated | Nominated | Won |
 |-------------|---------------|-----------|-----|
