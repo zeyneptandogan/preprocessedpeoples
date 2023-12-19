@@ -55,15 +55,28 @@ round-avatar: false
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
-social-network-links:
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  email: "zeynep.tandogan@epfl.ch"
-  github: zeyneptandogan
-  #youtube: c/daattali
+team_members:
+  - name: Zeynep Tandogan
+    email: "zeynep.tandogan@epfl.ch"
+    github: zeyneptandogan
+
+  - name: Nazlican Turan
+    email: "nazlican.turan@epfl.ch"
+    github: nazlicantrn
+
+  - name: Berke Argin 
+    email: "berke.argin@epfl.ch"
+    github: BerkeArgin
+
+  - name: Adam Barla
+    email: "adam.barla@epfl.ch"
+    github: adambarla
+
+
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: This website is designed for the ADA project of Preprocessed Peoples.
 
 ###########################
 # --- General options --- #
@@ -128,7 +141,7 @@ footer-hover-col: "#0085A1"
 
 # navbar-img: "/assets/img/earth-3537401.jpg"
 #footer-img: "/assets/img/bgimage.png"
-page-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
