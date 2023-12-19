@@ -138,5 +138,13 @@ let BeautifulJekyllJS = {
 };
 
 // 2fc73a3a967e97599c9763d05e564189
+// Simple zoom effect
+document.getElementById('zoom-img').addEventListener('click', function() {
+  if (this.style.transform === 'scale(1.5)') {
+      this.style.transform = 'scale(1)'; // Zoom out
+  } else {
+      this.style.transform = 'scale(1.5)'; // Zoom in
+  }
+});
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);

@@ -32,6 +32,17 @@ p {
   line-height: 1.5;
   margin: 1.875rem 0;
 }
+.img-container {
+  overflow: hidden; /* Optional, for the case the image is larger than the container */
+}
+
+#zoom-img {
+  transition: transform 0.25s ease; /* Smooth transition for zoom effect */
+  display: block; /* Removes bottom space/margin */
+  width: 100%; /* Adjust as necessary */
+  max-width: 100%; /* Adjust as necessary */
+  cursor: pointer; /* Indicates the image is interactive */
+}
 
 .tight-paragraph {
   margin-top: 5px;

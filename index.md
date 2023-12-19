@@ -49,12 +49,12 @@ share-img: /assets/img/header.png
 
 ## General Analysis based on Time
 
-<h2>The Change in the Number of Movies</h2>
+<h3>The Change in the Number of Movies</h3>
 {% include interactive_chart.html %}
 
 <div style="text-align: justify"> It is seen that there are movies between 1900 to 2016. However, between 2010 and 2015 it is observed that there is less value in contrast to the increasing trend in time. So, we decided to use the data which we have found more reliable which is 1900 to 2010.</div>
 
-<h2>The Change in the Number of Female vs Male Characters</h2>
+<h3>The Change in the Number of Female vs Male Characters</h3>
 <div style="text-align: justify"> We did the same time based analysis based on the gender. The below graph shows the number of female and male characters in the movies for the specific time interval. It is observed that in all times the number of male characters outnumbers the number of female characters. </div>
 
 {% include gender_time.html %}
@@ -82,3 +82,8 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 
 
 <div style="text-align: justify; margin-top: 10px;">Based on the averages, it is seen that male actors have higher average of apperances with 12.38 films whereas the female actors have the apparence in 9.47 film on average before their first Oscar nomination or win. After the award nomination or win, it is observed that the average gap of appearances between actors and actresses has increased, since the male actors significantly increase their average film count to 21.09 films.</div>
+
+<div class="img-container">
+    <img id="zoom-img" src="assets/img/gephi.jpg" alt="Gephi Trial lets goooo">
+</div>
+
