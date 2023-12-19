@@ -1,16 +1,13 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About us
+subtitle: Preprocessed Peoples
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Our group name is Preprocessed Peoples. In the scope of the Applied Data Analysis course, we aim to perform data analysis towards gender bias in the movie industry. In the main homepage you can find the study which examines whether the representation of gender in the movie industry and the extent of female under-representation and stereotyping.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Group members:
+- Zeynep Tandogan (zeyneptandogan@epfl.ch)
+- Adam Barla (adam.barla@epfl.ch)
+- Berke Argin (berke.argin@epfl.ch)
+- Nazlican Turan (nazlican.turan@epfl.ch)
