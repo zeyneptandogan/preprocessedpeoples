@@ -38,6 +38,13 @@ p {
   max-width: 100%;
   overflow: hidden; /* Optional: in case the image is larger than the container */
 }
+#zoom-img {
+  transition: transform 0.25s ease;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+}
 
 .tight-paragraph {
   margin-top: 5px;
