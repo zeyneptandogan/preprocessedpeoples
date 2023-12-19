@@ -21,7 +21,7 @@ author: Adam, Berke, Nazlican & Zeynep
 
 
 navbar-links:
-  About Us: "aboutme"
+  About Us: "aboutus"
   Resources:
     - Dataset: "https://www.cs.cmu.edu/~ark/personas/"
     - Repository: "https://github.com/zeyneptandogan/preprocessedpeoples.github.io"
@@ -50,22 +50,6 @@ round-avatar: false
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 
-social-network-links:
-  - name: Zeynep Tandogan
-    email: "zeynep.tandogan@epfl.ch"
-    github: zeyneptandogan
-
-  - name: Nazlican Turan
-    email: "nazlican.turan@epfl.ch"
-    github: nazlicantrn
-
-  - name: Berke Argin 
-    email: "berke.argin@epfl.ch"
-    github: BerkeArgin
-
-  - name: Adam Barla
-    email: "adam.barla@epfl.ch"
-    github: adambarla
 
 
 
