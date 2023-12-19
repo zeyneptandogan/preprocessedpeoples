@@ -29,6 +29,7 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initImgs();
 
     BeautifulJekyllJS.initSearch();
+    
   },
 
   initNavbar : function() {
@@ -90,8 +91,21 @@ let BeautifulJekyllJS = {
         getNextImg();
       }
     }
+    this.initZoomEffect();
   },
-
+  // Function to initialize the zoom effect
+  initZoomEffect: function() {
+    let zoomImg = document.getElementById('zoom-img');
+    if (zoomImg) {
+      zoomImg.addEventListener('click', function() {
+        if (this.style.transform === 'scale(1.5)') {
+          this.style.transform = 'scale(1)'; // Zoom out
+        } else {
+          this.style.transform = 'scale(1.5)'; // Zoom in
+        }
+      });
+    }
+  },
   getImgInfo : function() {
     const randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
     const src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
@@ -138,13 +152,4 @@ let BeautifulJekyllJS = {
 };
 
 // 2fc73a3a967e97599c9763d05e564189
-// Simple zoom effect
-document.getElementById('zoom-img').addEventListener('click', function() {
-  if (this.style.transform === 'scale(1.5)') {
-      this.style.transform = 'scale(1)'; // Zoom out
-  } else {
-      this.style.transform = 'scale(1.5)'; // Zoom in
-  }
-});
-
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);

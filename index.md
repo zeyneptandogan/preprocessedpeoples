@@ -87,13 +87,4 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
     <img id="zoom-img" src="{{ 'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo">
 </div>
 
-<script>
-document.getElementById('zoom-img').addEventListener('click', function() {
-    if (this.style.transform === 'scale(1.5)') {
-        this.style.transform = 'scale(1)';
-    } else {
-        this.style.transform = 'scale(1.5)';
-    }
-});
-</script>
 
