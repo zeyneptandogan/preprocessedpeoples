@@ -95,16 +95,35 @@ let BeautifulJekyllJS = {
   },
   // Function to initialize the zoom effect
   initZoomEffect: function() {
-    let zoomImg = document.getElementById('zoom-img');
-    if (zoomImg) {
-      zoomImg.addEventListener('click', function() {
-        if (this.style.transform === 'scale(1.5)') {
-          this.style.transform = 'scale(1)'; // Zoom out
-        } else {
-          this.style.transform = 'scale(1.5)'; // Zoom in
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      let imgContainer = document.querySelector('.img-container');
+      let img = document.getElementById('zoom-img');
+      let isZoomed = false;
+  
+      img.addEventListener('click', function(event) {
+          if (!isZoomed) {
+              // Calculate the click position as a percentage of the image size
+              let clickX = (event.offsetX / img.width) * 100;
+              let clickY = (event.offsetY / img.height) * 100;
+  
+              img.style.transformOrigin = `${clickX}% ${clickY}%`;
+              img.style.transform = 'scale(2)'; // Zoom level 2x
+              isZoomed = true;
+          } else {
+              img.style.transform = 'scale(1)';
+              isZoomed = false;
+          }
       });
-    }
+  
+      imgContainer.addEventListener('mousemove', function(event) {
+          if (isZoomed) {
+              // Move image on mouse move for panning
+              let posX = (event.offsetX / imgContainer.offsetWidth) * 100;
+              let posY = (event.offsetY / imgContainer.offsetHeight) * 100;
+              img.style.transformOrigin = `${posX}% ${posY}%`;
+          }
+      });
+  });  
   },
   getImgInfo : function() {
     const randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);

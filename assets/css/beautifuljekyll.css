@@ -34,16 +34,14 @@ p {
 }
 
 .img-container {
-  /* Example style: ensures the image container doesn't exceed the width of its parent */
-  max-width: 100%;
-  overflow: hidden; /* Optional: in case the image is larger than the container */
+  overflow: hidden;
+  position: relative;
 }
+
 #zoom-img {
   transition: transform 0.25s ease;
-  display: block;
-  width: 100%;
-  max-width: 100%;
   cursor: pointer;
+  width: 100%;
 }
 
 .tight-paragraph {
