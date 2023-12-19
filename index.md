@@ -29,12 +29,12 @@ share-img: /assets/img/header.png
     <ul>
         <li>Dataset creation using Freebase IDs and Wikidata API to extract IMDb IDs.</li>
         <li>Utilization of the TMDB API for acquiring gender information of cast and crew members.</li>
+        <li>The results are stored in movie_with_gender_info.csv file, that can be found in the repository.</li>
     </ul>
-    <span>The results are stored in movie_with_gender_info.csv file, that can be found in the repository.</span><br>
     <span>2) Oscar Awards Dataset from Kaggle: </span><br>
-    <span>Analyzing Oscar awards data by gender, focusing on nominee and winner gender proportions, revealing industry gender biases and progress towards equality in film awards. The dataset can be found in <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award/data?select=the_oscar_award.csv">Oscar Award Dataset</a></span><br>
+    <span>Analyzing Oscar awards data by gender, focusing on nominee and winner gender proportions, revealing industry gender biases and progress towards equality in film awards. The dataset can be found in <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award/data?select=the_oscar_award.csv">Oscar Award Dataset</a></span><br><br>
     <span>3) IMDB Rating Dataset:</span><br>
-    <span>As a success measure, IMBD ratings are used in the analysis. The data is taken from IMDB Non-commercial datasets. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are utilized for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></span><br>
+    <span>As a success measure, IMBD ratings are used in the analysis. The data is taken from IMDB Non-commercial datasets. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are utilized for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></span><br><br>
 </div>
 
 ## Research Questions
