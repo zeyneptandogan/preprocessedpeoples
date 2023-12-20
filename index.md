@@ -255,3 +255,28 @@ Then, After an ANOVA test has found a significant difference, we used Tukey's HS
 
 <div style="text-align: justify">As it can be seen from the plot, there are only 12 films which includes more number of females. When we analyzed the specifc genres,many of these genres—including "feminist film," "gender issues," and "women in prison films"—have topics that are exclusive to women. This pattern points to a concentrated portrayal of female characters in genres that are probably going to examine topics and storylines centered around women. <br>
 When we look at the genres that has minimal difference for genders, genres like 'Gender Issues,' 'Point of View Shot,' 'Kitchen Sink Realism,' 'Singing Cowboy,' 'Clay Animation,' 'Tokusatsu,' and 'Animals' show a perfect balance with absolute zero difference in male and female character counts.</div>
+
+## Sentiment Analysis of the Character Type Descriptions 
+
+<div style="text-align: justify">In this section, we aimed to see the relationship between character types and gender, which character types are unisex, which are specific to a particular gender, and how they change semantically.</div>
+
+<h4>Character Types Portrayed by Only Women, Only Men and both</h4>
+
+{% include unisex_character_types_gender.html %}
+
+<div style="text-align: justify">According to the plot, the unisex character types (i.e. that are portrayed by both female and male characters) in the CMU dataset are mostly played by male actors with few gender biased streotypical exceptions such as "dumb blonde" and "brainless beauty".<br>
+The characters played only by female actors can be seen as types that focus on appearance and emotional roles, such as 'chantese', 'silly blonde' and 'valley girl'.In contrast, characters played exclusively by male actors include 'tranquil fury', 'playful hacker', and 'byronic hero', clearly leaning towards action-oriented or intellectually complex personalities.</div>
+
+{% include character_types_gender_distribution.html %}
+
+<h4>Sentiment Analysis over Descriptions</h4>
+
+<div style="text-align: justify">We performed the sentiment analysis to the character type descriptions by calculating the average polarity and subjectivity of the tokens. There are two points that we looked for: Semantic polarity (Semantic orientation as positive, negative, neutral) and Semantic subjectivity (the degree to which text expresses personal opinions, emotions, or judgments, instead of objective factual information).</div>
+
+{% include sentiment_polarity_gender.html %}
+
+<div style="text-align: justify">According to the box plots we can see that median value of sentiment polarity is around the same for both genders. However male characters sentiment polarity distribution shows skewness while female characters polarity is not. Also, characters with more negative sentiment polarity is observed to be more. However, since the wilcoxon test gives the 0.58 p-value, it does not indicate a significance difference we can infer that there are not enough character types to conclude a statistical difference based on gender for sentiment polarity. </div>
+
+{% include sentiment_subjectivity_gender.html %}
+
+<div style="text-align: justify"> These box plots show that sentiment subjectivity for female characters is distributed within a much wider range then males. However, since the wilcoxon test applied below does not indicate a significance difference also for subjectivity we can infer that there are not enough character types to conclude a statistical difference based on gender for sentiment subjectivity as well. We can conclude that a further sentiment analysis can be performed to reveal a possible gender bias based on scripts or plot summaries as well.</div>
