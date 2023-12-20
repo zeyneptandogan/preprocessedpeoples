@@ -92,6 +92,7 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 </div>
 <h5>The effect of receiving Oscar nominee/win on the career paths based on appearances</h5>
 1\) Before Nomination/Win
+
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.
 
