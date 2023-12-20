@@ -92,29 +92,35 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
     </ul>
 </div>
 <h5>The effect of receiving Oscar nominee/win on the career paths based on appearances</h5>
-- 1\) Before Nomination/Win
+1\) Before Nomination/Win
 <div style="text-align: justify">
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.
 </div>
+<div style="text-align: center;">
+
 | Statistic       | Value   |
 |-----------------|---------|
 | T-statistic     | -1.153  |
 | P-value         | 0.251   |
+</div>
 
 <div style="text-align: justify; margin-top: 10px;"> The p value shows that there is no statistically significant difference in the number of films acted in by male and female actors before Oscar nomination/win. In other words, we do not have enough evidence to say that the gender has an influence over the career paths on the film appearances before Oscar recognition in the dataset. The negative and low t value shows that male average is higher than female and this difference is not large enough.</div>
 
--2\)After Nomination/Win
+2\)After Nomination/Win
 <div style="text-align: justify">
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.
 </div>
+
+<div style="text-align: center;">
 
 | Statistic       | Value    |
 |-----------------|----------|
 | T-statistic     | -2.976   |
 | P-value         | 0.00351  |
 
+</div>
 <div style="text-align: justify">Based on the result, we have a statistical evidence to reject the null hypothesis. As a result, the p value was found to be 0.003, which is less than 0.05, which shows that there is a statistically significant difference in the number of films released by male and female actors. Female actors tend to act in fewer films than male actors after receiving their Oscar nomination/win on average. <br>
 This conclusion points out that Oscar nomination/win can have a significant impact on the career paths of male and female actors. Female actors potentially have fewer film opportunities following the nomination/win.
 </div>
