@@ -185,3 +185,63 @@ The positive value of assortativity coefficient shows that the actors are more l
     <img id="zoom-img" src="{{'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo changed">
 </div>
 
+## Analysis about the Impact of Gender Composition in Cast and Crew on IMDb Ratings
+
+<div style="text-align: justify">Before diving into the details of this analysis, let's perform an overarching review of the data. <br>
+Firstly, lets look at the average cast and crew gender distributions. It should be noted that there is non-binary gender in the dataset, for the cases we dont know the gender or it is not wanted to be expressed. As it can be seen from the chart, male dominance shows itself in both crew and cast distributions. 
+</div>
+{% include average_gender_distribution_cast_crew.html %}
+
+<div style="text-align: justify">Then, Let's examine the number of movies for each dominant gender from our main character dataset. As it is observed, while a very small portion contains more female characters or an equal number of females and males, it has been observed that the number of males is higher in a very large portion of films .
+</div>
+{% include films_gender_character_distribution.html %}
+
+<h4>Correlation Analysis based on gender distribution in Cast & Crew and IMDB ratings</h4>
+<div style="text-align: justify">Key Findings:
+    <ul>
+        <li>Male Cast Percentage: 0.001782</li>
+        <li>Female Cast Percentage: -0.008818</li>
+        <li>Nonbinary Cast Percentage: -0.003767</li>
+        <li>Male Crew Percentage: 0.013692</li>
+        <li>Female Crew Percentage: 0.028989</li>
+        <li>Nonbinary Crew Percentage: -0.020391</li>
+    </ul>
+So, there is no strong correlation between the cast-crew gender distributions over the imdb ratings.
+</div>
+<h4>Group Comparisons</h4>
+<div style="text-align: justify">To get more interpretable insights based on gender representation, we prefer to analyze the groups as male-dominated, female-dominated, balanced movies and compare their average ratings.<br>
+Conducting the ANOVA test:</div>
+
+| Statistic   | Value   |
+|-------------|---------|
+| T-statistic | 5.913   |
+| P-value     | 0.00270 |
+
+
+<div style="text-align: justify">High F-statistics shows that there is a difference in variances between the groups. When we examined p value in this case, it suggests that the IMDb ratings are significantly different among films based on the cast gender distribution. It can be considered as an indicator that shows the gender composition of the cast might have an influence over the ratings. However, this is most probably due to the unequal distribution of classes in the original dataset that we are using. In order to get more convinced by the result, we will look at the statistics of Male-Dominant and Female-Dominant films.</div>
+
+| Metric                  | Male-Dominant Films           | Female-Dominant Films         |
+|-------------------------|-------------------------------|-------------------------------|
+| Mean IMDb Rating        | 6.271                         | 6.318                         |
+| Standard Deviation      | 1.029                         | 1.142                         |
+| Interquartile Range (IQR)| 1.200                         | 1.700                         |
+| Minimum IMDb Rating     | 1.3                           | 1.1                           |
+| Maximum IMDb Rating     | 10.0                          | 9.6                           |
+
+<div style="text-align: justify">Between the mean IMDB ratings the difference is quite small and both groups have similar standard deviation. However, the interquartile range shows that there is more variability in rating ranges within the category for female dominant films. Altough there is a statistically significant difference, this stats might suggest that there are other factors in the determination of film ratings beside gender distributions. <br> 
+Then, After an ANOVA test has found a significant difference, we used Tukey's HSD test to find out which specific groups' means (comparisons between pairs of groups) are different The results:
+<ul>
+    <li>There is a significant difference between the balanced and female-dominated groups, the female-dominated group has a higher mean in both comparisons.</li>
+    <li>There is no significant difference between the balanced and male-dominated groups.</li>
+</ul>
+</div>
+
+<div style="text-align: justify">When we performed the same analysis for crew gender distribution along with the imdb ratings, however, the unequal distribution of genders was also the case in here likewise cast gender distribuitons. The p value is found as 2.903e-48, although the result of p value shows that there is a significant difference it might be the result of this unequalness.</div>
+
+<h4>Changes in time based on cast and crew distributions</h4>
+
+{% include temporal_trends_female_representation.html %}
+{% include temporal_trends_male_representation.html %}
+
+<div style="text-align: justify">Both graphs point to gender inequality in the film industry; It seems that there are more men than women in both the cast and the crew. The data shows that there have been some efforts towards gender balance over time, but there is a notable gap between the representation of men and women.
+</div>
