@@ -93,10 +93,8 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 </div>
 <h5>The effect of receiving Oscar nominee/win on the career paths based on appearances</h5>
 1\) Before Nomination/Win
-<div style="text-align: justify">
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.
-</div>
 <div style="text-align: center;">
 
 | Statistic       | Value   |
@@ -107,26 +105,48 @@ Alternative Hypothesis (H1): There is a difference in the number of films acted 
 
 <div style="text-align: justify; margin-top: 10px;"> The p value shows that there is no statistically significant difference in the number of films acted in by male and female actors before Oscar nomination/win. In other words, we do not have enough evidence to say that the gender has an influence over the career paths on the film appearances before Oscar recognition in the dataset. The negative and low t value shows that male average is higher than female and this difference is not large enough.</div>
 
-2\)After Nomination/Win
-<div style="text-align: justify">
+2) After Nomination/Win
+
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.
+
+<div style="text-align: center;">
+
+| Statistic   | Value  |
+|-------------|--------|
+| T-statistic | -2.976 |
+| P-value     | 0.00351|
+
+</div>
+
+
+<div style="text-align: justify">Based on the result, we have a statistical evidence to reject the null hypothesis. As a result, the p value was found to be 0.003, which is less than 0.05, which shows that there is a statistically significant difference in the number of films released by male and female actors. Female actors tend to act in fewer films than male actors after receiving their Oscar nomination/win on average. <br>
+This conclusion points out that Oscar nomination/win can have a significant impact on the career paths of male and female actors. Female actors potentially have fewer film opportunities following the nomination/win.
+</div>
+
+<h5>Genre Preference</h5>
+<div style="text-align: justify">
+In this section, we will evaluate the existence of a specific genre that specifically provides nominations to men and women when receiving nominations.
+<br>
+Null Hypothesis (H0): There is no significant difference in the genre preferences of male and female actors in the movies that they obtained nominees/wins.
+Alternative Hypothesis (H1): There is a difference in the genre preferences of male and female actors in the movies that they obtained nominees/wins.
 </div>
 
 <div style="text-align: center;">
 
 | Statistic       | Value    |
 |-----------------|----------|
-| T-statistic     | -2.976   |
-| P-value         | 0.00351  |
+| Chi-squared     | 161.49   |
+| P-value         | 0.0058   |
 
 </div>
-<div style="text-align: justify">Based on the result, we have a statistical evidence to reject the null hypothesis. As a result, the p value was found to be 0.003, which is less than 0.05, which shows that there is a statistically significant difference in the number of films released by male and female actors. Female actors tend to act in fewer films than male actors after receiving their Oscar nomination/win on average. <br>
-This conclusion points out that Oscar nomination/win can have a significant impact on the career paths of male and female actors. Female actors potentially have fewer film opportunities following the nomination/win.
-</div>
+<div style="text-align: justify"> The larger the Chi-square value, the greater the probability that there really is a significant difference. In this case, it is found as 161.49. The p value is found as 0.0058 which is less than 0.05, which shows that we reject the null hypothesis. It means that there is a statistically significant difference which suggest that the distribution of film genres is not independent from the actors gender.
+<br>
+Given that the p-value (0.0058) is less than the conventional alpha level of 0.05, we reject the null hypothesis. This means there is statistically significant evidence to suggest that the distribution of film genres is not independent of the actor's gender. So, the fact that male and female actors who receive Oscar nominations tend to star in different genres of films indicates a potential gender-based genre preference or bias.</div>
+
+Analysis of Top 10 Genres that brings nomination specifically based on genders
 
 <div class="img-container">
     <img id="zoom-img" src="{{'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo changed">
 </div>
-
 
