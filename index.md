@@ -95,11 +95,14 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 1\) Before Nomination/Win
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.
-<div align="center">
+
+<div style="text-align: center;">
+
 | Statistic       | Value   |
 |-----------------|---------|
 | T-statistic     | -1.153  |
 | P-value         | 0.251   |
+
 </div>
 
 <div style="text-align: justify; margin-top: 10px;"> The p value shows that there is no statistically significant difference in the number of films acted in by male and female actors before Oscar nomination/win. In other words, we do not have enough evidence to say that the gender has an influence over the career paths on the film appearances before Oscar recognition in the dataset. The negative and low t value shows that male average is higher than female and this difference is not large enough.</div>
