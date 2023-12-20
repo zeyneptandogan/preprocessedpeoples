@@ -95,35 +95,36 @@ let BeautifulJekyllJS = {
   },
   // Function to initialize the zoom effect
   initZoomEffect: function() {
-      let imgContainer = document.querySelector('.img-container');
-      let img = document.getElementById('zoom-img');
-      let isZoomed = false;
-  
-      img.addEventListener('click', function(event) {
-          if (!isZoomed) {
-              // Calculate the click position as a percentage of the image size
-              let clickX = (event.offsetX / img.width) * 100;
-              let clickY = (event.offsetY / img.height) * 100;
-  
-              img.style.transformOrigin = `${clickX}% ${clickY}%`;
-              img.style.transform = 'scale(2)'; // Zoom level 2x
-              isZoomed = true;
-          } else {
-              img.style.transform = 'scale(1)';
-              isZoomed = false;
-          }
-      });
-  
-      imgContainer.addEventListener('mousemove', function(event) {
-          if (isZoomed) {
-              // Move image on mouse move for panning
-              let posX = (event.offsetX / imgContainer.offsetWidth) * 100;
-              let posY = (event.offsetY / imgContainer.offsetHeight) * 100;
-              img.style.transformOrigin = `${posX}% ${posY}%`;
-          }
-      });
-  
-  },
+    let imgContainers = document.querySelectorAll('.img-container');
+
+    imgContainers.forEach(function(container) {
+        let img = container.querySelector('img'); // Assuming there is only one image per container
+        let isZoomed = false;
+
+        img.addEventListener('click', function(event) {
+            if (!isZoomed) {
+                let clickX = (event.offsetX / img.width) * 100;
+                let clickY = (event.offsetY / img.height) * 100;
+
+                img.style.transformOrigin = `${clickX}% ${clickY}%`;
+                img.style.transform = 'scale(2)'; // Zoom level 2x
+                isZoomed = true;
+            } else {
+                img.style.transform = 'scale(1)';
+                isZoomed = false;
+            }
+        });
+
+        container.addEventListener('mousemove', function(event) {
+            if (isZoomed) {
+                let posX = (event.offsetX / container.offsetWidth) * 100;
+                let posY = (event.offsetY / container.offsetHeight) * 100;
+                img.style.transformOrigin = `${posX}% ${posY}%`;
+            }
+        });
+    });
+},
+
   getImgInfo : function() {
     const randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
     const src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
