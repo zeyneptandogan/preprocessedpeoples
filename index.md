@@ -63,7 +63,7 @@ share-img: /assets/img/header.png
 
 <h3>Analysis for Reward Opportunities based on Gender</h3>
 
-<div class="center-table">
+<div style="text-align: justify;" >
 In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dataset. 
 </div>
 
@@ -96,14 +96,12 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.
 
-<div class="center-table">
 
 | Statistic       | Value   |
 |-----------------|---------|
 | T-statistic     | -1.153  |
 | P-value         | 0.251   |
 
-</div>
 
 <div style="text-align: justify; margin-top: 10px;"> The p value shows that there is no statistically significant difference in the number of films acted in by male and female actors before Oscar nomination/win. In other words, we do not have enough evidence to say that the gender has an influence over the career paths on the film appearances before Oscar recognition in the dataset. The negative and low t value shows that male average is higher than female and this difference is not large enough.</div>
 
@@ -112,14 +110,12 @@ Alternative Hypothesis (H1): There is a difference in the number of films acted 
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.
 
-<div class="center-table">
 
 | Statistic   | Value  |
 |-------------|--------|
 | T-statistic | -2.976 |
 | P-value     | 0.00351|
 
-</div>
 
 
 <div style="text-align: justify">Based on the result, we have a statistical evidence to reject the null hypothesis. As a result, the p value was found to be 0.003, which is less than 0.05, which shows that there is a statistically significant difference in the number of films released by male and female actors. Female actors tend to act in fewer films than male actors after receiving their Oscar nomination/win on average. <br>
@@ -134,19 +130,41 @@ Null Hypothesis (H0): There is no significant difference in the genre preference
 Alternative Hypothesis (H1): There is a difference in the genre preferences of male and female actors in the movies that they obtained nominees/wins.
 </div>
 
-<div class="center-table">
 
 | Statistic       | Value    |
 |-----------------|----------|
 | Chi-squared     | 161.49   |
 | P-value         | 0.0058   |
 
-</div>
+
 <div style="text-align: justify"> The larger the Chi-square value, the greater the probability that there really is a significant difference. In this case, it is found as 161.49. The p value is found as 0.0058 which is less than 0.05, which shows that we reject the null hypothesis. It means that there is a statistically significant difference which suggest that the distribution of film genres is not independent from the actors gender.
 <br>
 Given that the p-value (0.0058) is less than the conventional alpha level of 0.05, we reject the null hypothesis. This means there is statistically significant evidence to suggest that the distribution of film genres is not independent of the actor's gender. So, the fact that male and female actors who receive Oscar nominations tend to star in different genres of films indicates a potential gender-based genre preference or bias.</div>
 
-Analysis of Top 10 Genres that brings nomination specifically based on genders
+<h5>Analysis of Top 10 Genres that brings nomination specifically based on genders</h5>
+{% include top_genres_by_gender_nomination.html %}
+
+<div style="text-align: justify">Based on top 10 genres that the actors got nomination from, it is seen that there are some overlaps in genre choices between female and male actors, however, there are some specific distinctions like romantic drama for females and war film for males.</div>
+
+
+<h5> Age at First Nomination/Win</h5>
+Null Hypothesis (H0): There is no significant difference in the average age at first nomination/win between male and female actors.
+Alternative Hypothesis (H1): There is a significant difference in the average age at first nomination/win between male and female actors.
+
+| Statistic   | Value   |
+|-------------|---------|
+| T-statistic | 4.902   |
+| P-value     | 2.95e-06|
+
+<div style="text-align: justify">The p value less than 0.05 shows that we reject the null hypothesis. The positive t-value shows that male actors tend to be older than female actors at the time of their first Oscar nomination or win.
+However, we should know that although the test indicates a significant difference, it does not explain the reasons/ causality behind this difference.
+<br>
+When we calculated the average age of the nomination for female and male actors, it is observed that while female actors get the nomination approximately at 31, males get the nomination on average approximately at 36. Surprisingly, female actors tend to receive their first Oscar nominations at a younger age than their male counterparts. This finding may reveal potential underlying trends or biases in the industry.
+</div>
+
+<h3>Actors and Collaborations Network</h3>
+<div style="text-align: justify">In order to come up with insights on the gender difference between the actors collaborations, an analysis based on network properties is conducted through the character metadata. Networks that are created is weighted and undirected where each node is representing actor and each edge showing the cooapearance in the same movies between these actors. Additionally, weights are given according to the number of times actors have collaborated. During the analysis, we delve deep into gender attribute of the nodes and create network by filtering the actors according to their popularity for the sake of better understanding.</div>
+{% include gender_distribution_chart.html %}
 
 <div class="img-container">
     <img id="zoom-img" src="{{'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo changed">
