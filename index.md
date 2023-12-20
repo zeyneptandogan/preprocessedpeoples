@@ -177,7 +177,7 @@ To zoom in the details based on gender, lets look at the top 30 edges with the h
 <div style="text-align: justify">Looking into the top 30 edges with the highest weights in the network, it is observed that there are no female to female collaborations within while only 5 edges represent male to female connections, the higher portion of these edges represents male to male connections. The pie chart above is also represents the overall distribution of these connections and reveals the underrepresentation of the females within popular actors. The maximum number of connections are found as 96.</div>
 
 
-<div style="text-align: justify">Assortativity Coefficient for 'gender': 0.008071260038849271 <br>
+<div style="text-align: justify">Assortativity Coefficient for 'gender': 0.008 <br>
 The positive value of assortativity coefficient shows that the actors are more likely to collaborate on the actors with the same gender. However,we should be careful that the value is very small, meaning that there is no strong preference for same-sex cooperation.
 </div>
 
