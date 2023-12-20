@@ -245,3 +245,13 @@ Then, After an ANOVA test has found a significant difference, we used Tukey's HS
 
 <div style="text-align: justify">Both graphs point to gender inequality in the film industry; It seems that there are more men than women in both the cast and the crew. The data shows that there have been some efforts towards gender balance over time, but there is a notable gap between the representation of men and women.
 </div>
+
+## Movie Genre Evaluation based on Genders
+
+<div style="text-align: justify">In this section, we will look at the genders based on genres such as the existence of specific movie genres that demonstrate a minimal or no gender gap in terms of character representation. In this scope, we will firstly look at the top 20 since there are a variety of genres. </div>
+{% include top_genre_gender_distribution.html %}
+<div style="text-align: justify">It is obvious that for the top 20 genres, the amount of the male characters exceeeds the female characters. But this fact causes us to think whether we really have some genres that the number of females are equal or more than the male characters or not. Let's search for it.</div>
+{% include equal_or_more_female_genres.html %}
+
+<div style="text-align: justify">As it can be seen from the plot, there are only 12 films which includes more number of females. When we analyzed the specifc genres,many of these genres—including "feminist film," "gender issues," and "women in prison films"—have topics that are exclusive to women. This pattern points to a concentrated portrayal of female characters in genres that are probably going to examine topics and storylines centered around women. <br>
+When we look at the genres that has minimal difference for genders, genres like 'Gender Issues,' 'Point of View Shot,' 'Kitchen Sink Realism,' 'Singing Cowboy,' 'Clay Animation,' 'Tokusatsu,' and 'Animals' show a perfect balance with absolute zero difference in male and female character counts.</div>
