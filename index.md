@@ -80,7 +80,6 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 | F            | 9.47                            | 12.96                          |
 | M            | 12.38                           | 21.09                          |
 
-
 <div style="text-align: justify; margin-top: 10px;">Based on the averages, it is seen that male actors have higher average of apperances with 12.38 films whereas the female actors have the apparence in 9.47 film on average before their first Oscar nomination or win. After the award nomination or win, it is observed that the average gap of appearances between actors and actresses has increased, since the male actors significantly increase their average film count to 21.09 films.</div>
 
 <h4>Hypothesis Testing</h4>
@@ -96,12 +95,10 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.
 
-
 | Statistic       | Value   |
 |-----------------|---------|
 | T-statistic     | -1.153  |
 | P-value         | 0.251   |
-
 
 <div style="text-align: justify; margin-top: 10px;"> The p value shows that there is no statistically significant difference in the number of films acted in by male and female actors before Oscar nomination/win. In other words, we do not have enough evidence to say that the gender has an influence over the career paths on the film appearances before Oscar recognition in the dataset. The negative and low t value shows that male average is higher than female and this difference is not large enough.</div>
 
@@ -110,13 +107,10 @@ Alternative Hypothesis (H1): There is a difference in the number of films acted 
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.
 
-
 | Statistic   | Value  |
 |-------------|--------|
 | T-statistic | -2.976 |
 | P-value     | 0.00351|
-
-
 
 <div style="text-align: justify">Based on the result, we have a statistical evidence to reject the null hypothesis. As a result, the p value was found to be 0.003, which is less than 0.05, which shows that there is a statistically significant difference in the number of films released by male and female actors. Female actors tend to act in fewer films than male actors after receiving their Oscar nomination/win on average. <br>
 This conclusion points out that Oscar nomination/win can have a significant impact on the career paths of male and female actors. Female actors potentially have fewer film opportunities following the nomination/win.
@@ -129,7 +123,6 @@ In this section, we will evaluate the existence of a specific genre that specifi
 Null Hypothesis (H0): There is no significant difference in the genre preferences of male and female actors in the movies that they obtained nominees/wins.
 Alternative Hypothesis (H1): There is a difference in the genre preferences of male and female actors in the movies that they obtained nominees/wins.
 </div>
-
 
 | Statistic       | Value    |
 |-----------------|----------|
@@ -151,6 +144,7 @@ Given that the p-value (0.0058) is less than the conventional alpha level of 0.0
 <div style="text-align: justify">
 Null Hypothesis (H0): There is no significant difference in the average age at first nomination/win between male and female actors.
 Alternative Hypothesis (H1): There is a significant difference in the average age at first nomination/win between male and female actors.</div>
+
 | Statistic   | Value   |
 |-------------|---------|
 | T-statistic | 4.902   |
@@ -173,7 +167,13 @@ When we calculated the average age of the nomination for female and male actors,
 <div class="img-container">
     <img id="zoom-img" src="{{'assets/img/resclaed.png' | relative_url }}" alt="Top 100 actors network">
 </div>
-<div style="text-align: justify">Here's the extracted Gephi visualization of top 100 actors filtered based on edge weights of 10 for the purpose of clear visualization. Pink nodes represents female actors while the blue ones represent male actors. Pink edges indicate female to female collaboration while blue edges indicate male to male collaborations. Also, nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges.</div>
+<div style="text-align: justify">Here's the extracted Gephi visualization of top 100 actors filtered based on edge weights of 10 for the purpose of clear visualization. Pink nodes represents female actors while the blue ones represent male actors. Pink edges indicate female to female collaboration while blue edges indicate male to male collaborations. Also, nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges.
+<br>
+To zoom in the details based on gender, lets look at the top 30 edges with the highest weights which means that mostly collaborated ones and see the tendency of collaboration between genders.
+</div>
+{% include gender_distribution_connections.html %}
+
+<div style="text-align: justify">Looking into the top 30 edges with the highest weights in the network, it is observed that there are no female to female collaborations within while only 5 edges represent male to female connections, the higher portion of these edges represents male to male connections. The pie chart above is also represents the overall distribution of these connections and reveals the underrepresentation of the females within popular actors. The maximum number of connections are found as 96.</div>
 
 <div class="img-container">
     <img id="zoom-img" src="{{'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo changed">
