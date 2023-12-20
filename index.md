@@ -148,9 +148,9 @@ Given that the p-value (0.0058) is less than the conventional alpha level of 0.0
 
 
 <h5> Age at First Nomination/Win</h5>
+<div style="text-align: justify">
 Null Hypothesis (H0): There is no significant difference in the average age at first nomination/win between male and female actors.
-Alternative Hypothesis (H1): There is a significant difference in the average age at first nomination/win between male and female actors.
-
+Alternative Hypothesis (H1): There is a significant difference in the average age at first nomination/win between male and female actors.</div>
 | Statistic   | Value   |
 |-------------|---------|
 | T-statistic | 4.902   |
@@ -165,6 +165,15 @@ When we calculated the average age of the nomination for female and male actors,
 <h3>Actors and Collaborations Network</h3>
 <div style="text-align: justify">In order to come up with insights on the gender difference between the actors collaborations, an analysis based on network properties is conducted through the character metadata. Networks that are created is weighted and undirected where each node is representing actor and each edge showing the cooapearance in the same movies between these actors. Additionally, weights are given according to the number of times actors have collaborated. During the analysis, we delve deep into gender attribute of the nodes and create network by filtering the actors according to their popularity for the sake of better understanding.</div>
 {% include gender_distribution_chart.html %}
+<div style="text-align: justify">The pie chart above visualizes the gender difference among the top 1000 most popular actors.</div>
+{% include top_actors_by_popularity.html %}
+<div style="text-align: justify">When we looked at to the top 10 female and male actors in terms of appaerances, there is a high difference between the occurances of top 10 female and male actors where the women is significantly underrepresented.</div>
+
+<h4>Top 100 Actors' Network</h4>
+<div class="img-container">
+    <img id="zoom-img" src="{{'assets/img/resclaed.png' | relative_url }}" alt="Top 100 actors network">
+</div>
+<div style="text-align: justify">Here's the extracted Gephi visualization of top 100 actors filtered based on edge weights of 10 for the purpose of clear visualization. Pink nodes represents female actors while the blue ones represent male actors. Pink edges indicate female to female collaboration while blue edges indicate male to male collaborations. Also, nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges.</div>
 
 <div class="img-container">
     <img id="zoom-img" src="{{'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo changed">
