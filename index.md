@@ -63,7 +63,7 @@ share-img: /assets/img/header.png
 
 <h3>Analysis for Reward Opportunities based on Gender</h3>
 
-<div style="text-align: justify;">
+<div class="center-table">
 In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dataset. 
 </div>
 
@@ -96,7 +96,7 @@ In this analysis, we utilized the Oscar Rewards dataset along with CMU Movie dat
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors before receiving an Oscar nomination or win.
 
-<div style="text-align: center;">
+<div class="center-table">
 
 | Statistic       | Value   |
 |-----------------|---------|
@@ -112,7 +112,7 @@ Alternative Hypothesis (H1): There is a difference in the number of films acted 
 Null Hypothesis (H0): There is no difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.<br>
 Alternative Hypothesis (H1): There is a difference in the number of films acted in by male and female actors after receiving an Oscar nomination or win.
 
-<div style="text-align: center;">
+<div class="center-table">
 
 | Statistic   | Value  |
 |-------------|--------|
@@ -134,7 +134,7 @@ Null Hypothesis (H0): There is no significant difference in the genre preference
 Alternative Hypothesis (H1): There is a difference in the genre preferences of male and female actors in the movies that they obtained nominees/wins.
 </div>
 
-<div style="text-align: center;">
+<div class="center-table">
 
 | Statistic       | Value    |
 |-----------------|----------|
