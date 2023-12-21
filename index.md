@@ -177,16 +177,27 @@ To zoom in the details based on gender, lets look at the top 30 edges with the h
 <div style="text-align: justify">Looking into the top 30 edges with the highest weights in the network, it is observed that there are no female to female collaborations within while only 5 edges represent male to female connections, the higher portion of these edges represents male to male connections. The pie chart above is also represents the overall distribution of these connections and reveals the underrepresentation of the females within popular actors. The maximum number of connections are found as 96.</div>
 
 
-<div style="text-align: justify">Assortativity Coefficient for 'gender': 0.008 <br>
-The positive value of assortativity coefficient shows that the actors are more likely to collaborate on the actors with the same gender. However,we should be careful that the value is very small, meaning that there is no strong preference for same-sex cooperation.
+<div style="text-align: justify">Assortativity Coefficient for 'gender': -0.019<br>
+Negative assortivity coefficient here indicates disassortative mixing, suggesting that nodes with different attributes are more likely to be connected. Thus there are no gender homophily (i. e. the tendency for actors of the same gender to form social connections or relationships more frequently than would be expected by chance), but rather male and female connections are more likely to occur as expected and higlights collaboration across gender boundaries.
 </div>
 
 <div class="img-container">
-    <img id="zoom-img" src="{{'assets/img/gephi.jpg' | relative_url }}" alt="Gephi Trial lets goooo changed">
+    <img id="zoom-img" src="{{ assets/img/malenet.png | relative_url }}" alt="Male Net">
+</div>
+
+<div style="text-align: justify">Here's the extracted Gephi visualization of top 100 male actors filtered based on edge weights of 10 for the purpose of clear visualization where nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges.</div>
+
+<div class="img-container">
+    <img id="zoom-img" src="{{ assets/img/femalenet.png | relative_url }}" alt="Female Net">
+</div>
+<div style="text-align: justify">Here's the extracted Gephi visualization of top 100 female actors with unfiltered edge weights where nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges.<br> The difference in the average degrees in these two subgraphs representing male and female actors indicates that that male actors tend to engage in more collaborations within the film and television industry since males have a higher average degree. One explanation can be that male actors are involved in a greater number of partnerships and projects, reflecting a more extensive network of collaborations.
+Transitivity measures the likelihood that if actors A and B collaborate with actor C, then actors A and B might also collaborate directly. A higher transitivity would indicate a more interconnected and cooperative network.
+Hence, there is an observed stability in male actors' collaborations compared to female actors' collaborations as expected, highlighting the fact that male actors network is more interconnected with more frequent collaborations between each other. One interpretation may be that fewer female actors are available in the movie industry, hence there would be a limited pool of potential female candidates for collaboration and rather they are being connected to male actors.
+In conclusion, a higher transitivity in the male actors' network can indicate that tehre ex
+st more opportunities for collaborative work and stronger professional bonds for males, whereas there are fewer collaboration opportunities and a less interconnected professional community for their female colleagues.
 </div>
 
 ## Analysis about the Impact of Gender Composition in Cast and Crew on IMDb Ratings
-
 <div style="text-align: justify">Before diving into the details of this analysis, let's perform an overarching review of the data. <br>
 Firstly, lets look at the average cast and crew gender distributions. It should be noted that there is non-binary gender in the dataset, for the cases we dont know the gender or it is not wanted to be expressed. As it can be seen from the chart, male dominance shows itself in both crew and cast distributions. 
 </div>
