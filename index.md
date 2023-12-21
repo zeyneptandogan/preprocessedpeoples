@@ -182,13 +182,13 @@ Negative assortivity coefficient here indicates disassortative mixing, suggestin
 </div>
 
 <div class="img-container">
-    <img id="zoom-img" src="{{ assets/img/malenet.png | relative_url }}" alt="Male Net">
+    <img id="zoom-img" src="{{ 'assets/img/malenet.png' | relative_url }}" alt="Male Net">
 </div>
 
 <div style="text-align: justify">Here's the extracted Gephi visualization of top 100 male actors filtered based on edge weights of 10 for the purpose of clear visualization where nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges.</div>
 
 <div class="img-container">
-    <img id="zoom-img" src="{{ assets/img/femalenet.png | relative_url }}" alt="Female Net">
+    <img id="zoom-img" src="{{ 'assets/img/femalenet.png' | relative_url }}" alt="Female Net">
 </div>
 <div style="text-align: justify">Here's the extracted Gephi visualization of top 100 female actors with unfiltered edge weights where nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges.<br> The difference in the average degrees in these two subgraphs representing male and female actors indicates that that male actors tend to engage in more collaborations within the film and television industry since males have a higher average degree. One explanation can be that male actors are involved in a greater number of partnerships and projects, reflecting a more extensive network of collaborations.
 Transitivity measures the likelihood that if actors A and B collaborate with actor C, then actors A and B might also collaborate directly. A higher transitivity would indicate a more interconnected and cooperative network.
