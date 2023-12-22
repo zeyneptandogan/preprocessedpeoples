@@ -43,10 +43,10 @@ share-img: /assets/img/header.png
     <span>3) Does semantic analysis of character types reveal any distinct differences in the assignment of roles based on gender?</span><br>
     <span>4) Does the gender composition of cast and crew influence the critical success of films, evaluated by IMDb ratings?</span><br>
     <span>5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</span><br>
-</div>
-
+    
 We now have the dataset and our research questions to unveil the gender bias.  
 So brace yourselves for the analysis🚀
+</div>
 ## Temporal Analysis 🎞️
 
 <h3>How does the number of movies released changed over time?</h3>
