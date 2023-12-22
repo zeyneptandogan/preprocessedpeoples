@@ -301,6 +301,12 @@ The characters played only by female actors can be seen as types that focus on b
 
 <div style="text-align: justify"> These box plots show that sentiment subjectivity for female characters is distributed within a much wider range then males. However, since the wilcoxon test applied below does not indicate a significance difference also for subjectivity we can infer that there are not enough character types to conclude a statistical difference based on gender for sentiment subjectivity as well. We can conclude that a further sentiment analysis can be performed to reveal a possible gender bias based on scripts or plot summaries as well.</div>
 
+<h4>Analysis over Plot Summaries based on Genders </h4>
+
+{% include top_actions_plot.html %}
+
+{% include top_actions_plot_female.html %}
+
 <h4>Conclusion and Implications for the Movie Industry 🎬 </h4>
 Now the final scene is upon us.✨ Throughout our work, we investigated the overall effects of gender in the movie industry with a focus on actors career opportunities and success both in terms of getting nominated and winning Oscar rewards and collaborating with the other actors based on their popularity. We saw that females are getting nominated or win at a younger age, from mostly genres like romantic comedies and even for the most succesful female actresses opportunities after winning an Oscar is significantly less. In the most popular actors networks they are higly underrepresented and have much less average degrees and interconnectednesss, highlighting that the collaborations they are having is highly limited. For the cast and crew distributions, male dominancy shows up once again and compared to their male counterparts females are much less present in the movie crews than casts. Furthermore, there are only a handful of movies and genres showing gender equality in representation and the female actors play a smaller range of characters and a wider range of sentiments.<br> <br>
 In this grand conclusion, let's not just applaud the findings but also embrace the responsibility that they bring up. It's a cinematic journey where every role, every narrative, and every rating contribute to the evolving tale of gender dynamics in the film industry. Lights dim, but the echoes of analysis linger, urging the movie industry to script a future where gender finds its equal place in the spotlight🔦.
