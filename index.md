@@ -22,7 +22,7 @@ share-img: /assets/img/header.png
 </div>
 
 <div style="text-align: justify">
-    <p><strong>Additional Datasets:</strong> To perform a detailed analysis, we used 5 additional datasets such as follows:</p>
+    <p><strong>Additional Datasets:</strong> To perform a detailed analysis, we used 4 additional datasets such as follows:</p>
     <span>1) Cast and crew data is collected by us following the steps below:</span><br>
     <ul>
         <li>Dataset creation using Freebase IDs and Wikidata API to extract IMDb IDs.</li>
@@ -33,6 +33,7 @@ share-img: /assets/img/header.png
     <span> The dataset contains a scrape of The Academy Awards Database, recorded of past Academy Award winners and nominees between 1927 and 2023. It is used to reveal gender differences and can be found here <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award/data?select=the_oscar_award.csv">Oscar Award Dataset</a></span><br><br>
     <span>3) IMDB Rating Dataset:</span><br>
     <span>As a success measure, ratings taken from IMDB Non-commercial datasets are considered. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are used for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></span><br>
+    <br>
     <span>4) Character types descriptions dataset:</span><br>
         <span>Created manually by extracting descriptions from tvtropes.org. </span><br>
 </div>
