@@ -13,7 +13,9 @@ share-img: /assets/img/header.png
     Grab your popcorn and join us this time while we embark on a journey to unreveal this gender bias in the film industry which has been so deeply rooted and implicit that most of us have been missing it all along. 
     Get ready to discover how your beloved actors' career paths and collaborations have been influenced by their gender. Action! 🍿🎬
 </div>
-
+<div class="img-container">
+    <img id="zoom-img" src="{{ 'assets/img/WhatsApp Image 2023-12-22 at 01.14.45' | relative_url }}" alt="Female Net">
+</div>
 ## About the Dataset 
 <div style="text-align: justify">
 <strong>Main Dataset:</strong>  CMU Movie Summary Corpus, collected by the Machine Learning Department of Carnegie Mellon University includes Movie metadata consisting of release date, runtime, movie language, box office revenue, countries. Character metadata included is consisting of character names, actors, gender and age at the time of the movie release. Additionally, plot summaries and Stanford CoreNLP-processed summaries are also provided by them. 
