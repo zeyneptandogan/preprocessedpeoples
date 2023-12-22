@@ -106,7 +106,7 @@ Alternative Hypothesis (H1): There is a difference in the number of films acted 
 | T-statistic     | -1.153  |
 | P-value         | 0.251   |
 
-<div style="text-align: justify; margin-top: 10px;"> Well, gender bias is not always the case since the p value shows us that there is no statistically significant difference in the number of films acted in by male and female actors before Oscar nomination/win. In other words, we do not have enough evidence to say that the gender has an influence over the career paths on the film appearances before Oscar recognition in the dataset. The negative and low t value shows that male average is higher than female however this difference is not large enough.</div>
+<div style="text-align: justify; margin-top: 10px;"> Well, gender bias is not always that significant since the p value shows us that there is no statistically significant difference in the number of films acted in by male and female actors before Oscar nomination/win. In other words, we do not have enough evidence to say that the gender has an influence over the career paths on the film appearances before Oscar recognition in the dataset. The negative and low t value shows that male average is higher than female however this difference is not large enough.</div>
 
 2) After Nomination/Win
 
@@ -193,7 +193,7 @@ To zoom in the details based on gender, lets look at the top 30 edges with the h
     <img id="zoom-img" src="{{ 'assets/img/malenet.png' | relative_url }}" alt="Male Net">
 </div>
 
-<div style="text-align: justify">Here's the extracted Gephi visualization of top 100 male actors filtered based on edge weights of 10 for the purpose of clear visualization where nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges. Before getting lost in the dazzling details, don't forget to click on the network image for zooming in.🔍 Happy exploring!</div>
+<div style="text-align: justify">Here's the extracted Gephi visualization of top 100 male actors filtered based on edge weights of 10 for the purpose of clear visualization where nodes with higher degrees are represented bigger than other nodes whereas edges with higher weights are represented with thicker edges. Before getting lost in the dazzling details, don't forget to click on our network images for zooming in.🔍 Happy exploring!</div>
 
 <div class="img-container">
     <img id="zoom-img" src="{{ 'assets/img/femalenet.png' | relative_url }}" alt="Female Net">
@@ -207,7 +207,7 @@ In a nutshell, a higher transitivity in the male actors' network can indicate th
 </div>
 
 ## The Impact of Gender Composition in Cast and Crew on IMDb Ratings
-<div style="text-align: justify"> Is there a secret formula to higher IMDb ratings? Does the gender makeup of the cast and crew play a role in the audience's verdict? Does a perfect blend of male and female talents guarantee a banger movie and a stellar IMDb score?👥 Before diving into the details of this analysis, let's take a glance at the data landscape.🌐 <br>
+<div style="text-align: justify"> Is there a secret formula to higher IMDb ratings? Does the gender makeup of the cast and crew play a role in the audience's verdict? Does a perfect blend of male and female talents guarantee a banger movie and a stellar IMDb score?👥 Before diving into the details of this analysis, let's take a glance at on screen vs behind the scenes landscape.🌐 <br>
 First, we'll look at the average cast and crew gender distributions. It should be noted that there is non-binary gender in the dataset for the cases we dont know the gender or it is not wanted to be expressed. As it can be seen from the chart, male dominance shows itself once again in both crew and cast distributions. 
 </div>
 {% include average_gender_distribution_cast_crew.html %}
@@ -263,14 +263,14 @@ Then, After an ANOVA test has found a significant difference, we used Tukey's HS
 {% include temporal_trends_female_representation.html %}
 {% include temporal_trends_male_representation.html %}
 
-<div style="text-align: justify">Both graphs point to gender inequality in the film industry; It seems that there are more men than women in both the cast and the crew. The data shows that there have been some efforts towards gender balance over time, but there is still a notable gap between the representation of men and women. Acknowledging the efforts made, the industry has taken steps towards a more balanced portrayal. Still, the long road on ensuring equal representation for all talents in the cinematic world stretches far beyond the horizon. 🌅
+<div style="text-align: justify">Both graphs point to gender inequality in the film industry; It seems that there are more men than women in both the cast and the crew. Interestingly, male ratio is almost the same for crew and casts while female ratio is much higher for the crew than the cast of the movies. The reason for that might be the striking truth: cinematographers, directors and producers being traditionally perceived as male-centric powerful roles, they carve the backstage narrative. The temporal analysis also shows that there have been some efforts towards gender balance over time, but there is still a notable gap between the representation of men and women. Acknowledging the efforts made, the industry has taken steps towards a more balanced portrayal. Still, the long road on ensuring equal representation for all talents in the cinematic world stretches far beyond the horizon. 🌅
 </div>
 
 ## Movie Genre Evaluation based on Genders
 
 <div style="text-align: justify"> Now, we're putting movie genres under the gender microscope.🧐 We will look at the genders based on genres and try to answer whether there are specific movie genres that demonstrate a minimal or no gender gap in terms of character representation. Any guesses? We actually have but for now, let's keep the genre guessing game alive! In this scope, we will firstly look at the top 20 since there are a variety of genres. </div>
 {% include top_genre_gender_distribution.html %}
-<div style="text-align: justify">It is obvious that for the top 20 genres, more male characters hogging the spotlight. But, as we know, the best twists come when we least expect them.. Let's keep exploring!</div>
+<div style="text-align: justify">It is obvious that for the top 20 genres, more male characters appear. But, as we know, the best twists come when we least expect them.. Let's keep exploring!</div>
 {% include equal_or_more_female_genres.html %}
 
 <div style="text-align: justify">As it can be seen from the plot, there are only 12 films which includes more number of females in the dataset.😯 Unveiling the feminine spotlight, many of these genres—including "feminist film," "gender issues," and "women in prison films"—have topics that are exclusive to women. This pattern points to a concentrated portrayal of female characters in genres that are examining topics and storylines centered around women. <br>
@@ -300,3 +300,7 @@ The characters played only by female actors can be seen as types that focus on b
 {% include sentiment_subjectivity_gender.html %}
 
 <div style="text-align: justify"> These box plots show that sentiment subjectivity for female characters is distributed within a much wider range then males. However, since the wilcoxon test applied below does not indicate a significance difference also for subjectivity we can infer that there are not enough character types to conclude a statistical difference based on gender for sentiment subjectivity as well. We can conclude that a further sentiment analysis can be performed to reveal a possible gender bias based on scripts or plot summaries as well.</div>
+
+<h4>Conclusion and Implications for the Movie Industry 🎬 </h4>
+Now the final scene is upon us.✨ Throughout our work, we investigated the overall effects of gender in the movie industry with a focus on actors career opportunities and success both in terms of getting nominated and winning Oscar rewards and collaborating with the other actors based on their popularity. We saw that females are getting nominated or win at a younger age, from mostly genres like romantic comedies and even for the most succesful female actresses opportunities after winning an Oscar is significantly less. In the most popular actors networks they are higly underrepresented and have much less average degrees and interconnectednesss, highlighting that the collaborations they are having is highly limited. For the cast and crew distributions, male dominancy shows up once again and compared to their male counterparts females are much less present in the movie crews than casts. Furthermore, there are only a handful of movies and genres showing gender equality in representation and the female actors play a smaller range of characters and a wider range of sentiments.<br> <br>
+In this grand conclusion, let's not just applaud the findings but also embrace the responsibility that they bring up. It's a cinematic journey where every role, every narrative, and every rating contribute to the evolving tale of gender dynamics in the film industry. Lights dim, but the echoes of analysis linger, urging the movie industry to script a future where gender finds its equal place in the spotlight🔦.
