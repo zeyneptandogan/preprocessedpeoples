@@ -7,7 +7,7 @@ thumbnail-img: /assets/img/header.png
 share-img: /assets/img/header.png
 ---
 <div style="text-align: justify">
-    Movies have long held a mirror to society and offered viewers the opportunity to share different experiences and
+    TRIAL Movies have long held a mirror to society and offered viewers the opportunity to share different experiences and
     emotions. While giving us a roller-coster of emotions and a great way to bond and connect with different people and cultures, they are presenting a reflection to the modern societies that we are living in which has historically been known as gender biased.
     <br><br>
     Hold your popcorn and watch us this time while we deep dive into unrevealing this gender bias in the film industry which has been so implicit that we don't even notice. 
