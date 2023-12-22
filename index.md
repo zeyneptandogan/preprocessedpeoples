@@ -8,19 +8,19 @@ share-img: /assets/img/header.png
 ---
 <div style="text-align: justify">
     Movies have long held a mirror to society and offered viewers the opportunity to share different experiences and
-    emotions. While giving us a roller-coster of emotions and a great way to bond and connect with different people and cultures, they are presenting a reflection to the modern societies that we are living in which has historically been known as gender biased.
+    emotions. While giving us a roller-coster of emotions and a great way to bond and connect with different people and cultures universally, they are presenting a reflection to the modern societies that we are living in which has historically been known as gender biased.
     <br><br>
-    Hold your popcorn and watch us this time while we deep dive into unrevealing this gender bias in the film industry which has been so implicit that we don't even notice. 
+    Grab your popcorn and join us this time while we embark on a journey to unreveal this gender bias in the film industry which has been so deeply rooted and implicit that we have been missing it all along. 
     Get ready to discover how your beloved actors' career paths and collaborations have been influenced by their gender. Action! 🍿🎬
 </div>
 
-## The Dataset
+## About the Dataset 
 <div style="text-align: justify">
-<strong>Main Dataset:</strong>  CMU Movie Summary Corpus, collected by the Machine Learning Department of Carnegie Mellon University which includes Movie metadata consists of release date, runtime, movie language, box office revenue, countries and Character metadata consists of character names, actors, gender and age at the time of the movie release. Additionally, plot summaries and Stanford CoreNLP-processed summaries are also provided.
+<strong>Main Dataset:</strong>  CMU Movie Summary Corpus, collected by the Machine Learning Department of Carnegie Mellon University which includes Movie metadata consisting of release date, runtime, movie language, box office revenue, countries and Character metadata consists of character names, actors, gender and age at the time of the movie release. Additionally, plot summaries and Stanford CoreNLP-processed summaries are also provided. 
 </div>
 
 <div style="text-align: justify">
-    <p><strong>Additional Datasets:</strong> To perform a detailed analysis, we used additional datasets such as follows:</p>
+    <p><strong>Additional Datasets:</strong> To perform a detailed analysis, we used additional datasets in this project such as follows:</p>
     <span>1) Data collected by us following the steps below:</span><br>
     <ul>
         <li>Dataset creation using Freebase IDs and Wikidata API to extract IMDb IDs.</li>
@@ -31,6 +31,8 @@ share-img: /assets/img/header.png
     <span>Analyzing Oscar awards data by gender, focusing on nominee and winner gender proportions, revealing industry gender biases and progress towards equality in film awards. The dataset can be found in <a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award/data?select=the_oscar_award.csv">Oscar Award Dataset</a></span><br><br>
     <span>3) IMDB Rating Dataset:</span><br>
     <span>As a success measure, IMBD ratings taken from IMDB Non-commercial datasets are used. Only the files titled 'title.ratings.tsv.gz' and 'title.basics.tsv.gz' are utilized for this analysis. The datasets can be found in <a href="https://developer.imdb.com/non-commercial-datasets/">IMDB Ratings Datasets</a></span><br>
+    <span>4) Character types descriptions dataset:
+        <span>Created manually by extracting descriptions from tvtropes.org
 </div>
 
 ## Research Questions
@@ -43,7 +45,9 @@ share-img: /assets/img/header.png
     <span>5) Are there specific movie genres that demonstrate a minimal or no gender gap in terms of character representation?</span><br>
 </div>
 
-## Temporal Analysis
+We now have the dataset and our research questions to unveil the gender bias.  
+So brace yourselves for the analysis🚀
+## Temporal Analysis 🎞️
 
 <h3>How does the number of movies released changed over time?</h3>
 {% include interactive_chart.html %}
