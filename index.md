@@ -7,11 +7,11 @@ thumbnail-img: /assets/img/header.png
 share-img: /assets/img/header.png
 ---
 <div style="text-align: justify">
-    TRIAL Movies have long held a mirror to society and offered viewers the opportunity to share different experiences and
+    Movies have long held a mirror to society and offered viewers the opportunity to share different experiences and
     emotions. While giving us a roller-coster of emotions and a great way to bond and connect with different people and cultures, they are presenting a reflection to the modern societies that we are living in which has historically been known as gender biased.
     <br><br>
     Hold your popcorn and watch us this time while we deep dive into unrevealing this gender bias in the film industry which has been so implicit that we don't even notice. 
-    How your favorite actors career trajectories and collaborative opportunities actually differ based on their gender and its change over time. Action!
+    Get ready to discover how your beloved actors' career paths and collaborations have been influenced by their gender. Action! 🍿🎬
 </div>
 
 ## The Dataset
