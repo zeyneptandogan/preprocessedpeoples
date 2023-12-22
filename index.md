@@ -8,7 +8,7 @@ share-img: /assets/img/header.png
 ---
 <div style="text-align: justify">
     Movies have long held a mirror to society and offered viewers the opportunity to share different experiences and
-    emotions. While giving us a roller-coster of emotions and a great way to bond and connect with different people and cultures universally, they are presenting a reflection to the modern societies that we are living in which has historically been known as gender biased.
+    emotions. While giving us a roller-coaster of emotions and a great way to bond and connect with different people and cultures universally, they are presenting a reflection to the modern societies that we are living in which has historically been known as gender biased.
     <br><br>
     Grab your popcorn and join us this time while we embark on a journey to unreveal this gender bias in the film industry which has been so deeply rooted and implicit that most of us have been missing it all along. 
     Get ready to discover how your beloved actors' career paths and collaborations have been influenced by their gender. Action! 🍿🎬
