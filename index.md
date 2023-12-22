@@ -310,9 +310,67 @@ Here are the bar plots visualizing the top 20 actions associated with each gende
 
 <div style="text-align: justify"> While the actions appearing are similar, two noticable ones are the verbs killing and marrying. We can see that killing is an action mostly associated with man 💥 while marrying is with women💍👰 just fitting the gender stereotypes within the society we are living in.</div>
 
+
+
+<h4> Analysis over Plot Summaries based on Genders</h4>
+Lastly, let's dive into the actions that appear in the movies plot summaries and how they differ based on genders.💃🕺
+We first need to answer the question: How can we define a character? Our answer is that "actions speak louder than words", therefore, we will look at actions taken by each character in the plot summaries. After retrieving actions and related words from CoreNLP parsed plot summaries, we first look at the most common words for female and male 
+Here are the bar plots visualizing the top 20 actions associated with each gender.
+
+
+{% include top_actions_plot.html %}
+
+{% include top_actions_plot_female.html %}
+<div style="text-align: justify"> While the actions appearing are similar, two noticable ones are the verbs killing and marrying. We can see that killing is an action mostly associated with man 💥 while marrying is with women💍👰 just fitting the gender stereotypes within the society we are living in.</div>
+
+<div style="text-align: justify">These results indicates some bias at some extent. However, we need to delve in further. But how?
+Alas, Decision Tree comes to our aid! But we need to make some arrangements for it.
+First, we need to encode these actions for each character, where we went with the simplest approach: For a given character, we put 0-1 flags for each action type on whether a character is associated with that action type.</div>
+
+However, since the total amount of different verb is over 5000, decision tree would have a hard time traversing the dataset. For this reason, we have to cluster some of these verbs together, with the help of GloVe word embeddings and K-nearest neighbor. In the end, from the whole list of actions, after filtering out non-English words and clustering, we reduce our action set to just 500 words.
+Here are some of the example clusters and their associated verbs:
+| Cluster Word | Actions                                                       |
+|--------------|---------------------------------------------------------------|
+| abide        | 'govern', 'accord', 'obey', 'conform', 'abide', 'adhere', 'uphold', 'comply' |
+| eat          | 'consume', 'eaten', 'lunch', 'eat'                        |
+| asleep       | 'asleep', 'nap', 'dizzy', 'awake', 'wake', 'sleep'         |
+
+Now, every thing is set for the Decision Tree, where we give it the task of determining the gender of the character from the actions that they take. To make the results human readable, we limit its depth to 4. Here it is, in its all glory. Don't forget to zoom, since it is still a large tree!
+
 <div class="img-container">
     <img id="zoom-img" src="{{ 'assets/img/plot_decision_trees.png' | relative_url }}" alt="Female Net">
 </div>
+Let's traverse the tree together, to see the decision process. 
+First node is marry, where the cluster represents words:
+```marry', 'remarry', 'divorce', 'childless', 'celibate'```
+
+
+If a character is related to these words, model is likely to guess the character as female, which shows some bias.
+Assuming this is the case, next node is forget, and our words are:
+```
+  'sit','listen', 'dig', 'swear',
+  'spoil', 'forgive', 'hurry', 'pretend', 'ya',
+  'remind', 'rid', 'lay', 'kill', 'mine',
+  'lie', 'shake', 'dare', 'let', 'steal',
+  'stumble', 'shut', 'fool', 'knock', 'bury'
+```
+
+Now, this cluster is a mixture of different words, but arguably, it contains more negative words like kill, swear, steal, fool.
+If a character displays one of these behaviours, decision is shifted into male. If not, our next node is ```winning```, where the words are:
+```'contest', 'reward', 'award', 'winning', 'win', 'prize'```
+In this step, our model associates these words with male characters, which is even worse!
+Continuing on, if our character does not perform one of those actions, the last node is ```explain```, which the words are:
+```
+'quiz','lecture', 'react',
+'understand','answer', 'ask', 'speak',
+'discuss','respond', 'solve', 'debate', 'talk',
+'lesson', 'write', 'learn', 'skill', 'correct',
+'question', 'refer', 'quote', 'brain', 'clue',
+'exact', 'explain', 'teach', 'advice','translate'
+```
+Now, decision tree decides that if a character shows intellectual behavior, then it becomes more likely to be male! This does not looks good, and one can also traverse in different paths to see a similar decision process. In another decision tree, with a greater depth, we have these feature importances:
+
+Note that this decision tree is not a great learner since its depth is limited, it's guessing accuracy is 65%. However, it can still present a convincing argument on the exisistance of a gender bias.
 
 <h4>Conclusion and Implications for the Movie Industry 🎬 </h4>
 Now the final scene is upon us.✨ Throughout our work, we investigated the overall effects of gender in the movie industry with a focus on actors career opportunities and success both in terms of getting nominated and winning Oscar rewards and collaborating with the other actors based on their popularity. We saw that females are getting nominated or win at a younger age, from mostly genres like romantic comedies and even for the most succesful female actresses opportunities after winning an Oscar is significantly less. In the most popular actors networks they are higly underrepresented and have much less average degrees and interconnectednesss, highlighting that the collaborations they are having is highly limited. For the cast and crew distributions, male dominancy shows up once again and compared to their male counterparts females are much less present in the movie crews than casts. Furthermore, there are only a handful of movies and genres showing gender equality in representation and the female actors play a smaller range of characters and a wider range of sentiments.<br> <br>
