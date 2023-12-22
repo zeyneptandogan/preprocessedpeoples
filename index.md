@@ -14,7 +14,7 @@ share-img: /assets/img/header.png
     Get ready to discover how your beloved actors' career paths and collaborations have been influenced by their gender. Action! 🍿🎬
 </div>
 <div class="img-container">
-    <img id="zoom-img" src="{{ 'assets/img/WhatsApp Image 2023-12-22 at 01.14.45' | relative_url }}" alt="Female Net">
+    <img id="zoom-img" src="{{ 'assets/img/WhatsApp Image 2023-12-22 at 01.14.45.jpeg' | relative_url }}" alt="Popcorn">
 </div>
 ## About the Dataset 
 <div style="text-align: justify">
