@@ -324,11 +324,13 @@ Here are the bar plots visualizing the top 20 actions associated with each gende
 <div style="text-align: justify"> While the actions appearing are similar, two noticable ones are the verbs killing and marrying. We can see that killing is an action mostly associated with man 💥 while marrying is with women💍👰 just fitting the gender stereotypes within the society we are living in.</div>
 
 <div style="text-align: justify">These results indicates some bias at some extent. However, we need to delve in further. But how?
-Alas, Decision Tree comes to our aid! But we need to make some arrangements for it.
-First, we need to encode these actions for each character, where we went with the simplest approach: For a given character, we put 0-1 flags for each action type on whether a character is associated with that action type.</div>
+Alas, decision tree comes to our aid! But we need to make some arrangements for it.
+First, we need to encode these actions for each character, where we went with the simplest approach: For a given character, we put ```0-1``` flags for each action type on whether a character is associated with that action type.</div>
 
 However, since the total amount of different verb is over 5000, decision tree would have a hard time traversing the dataset. For this reason, we have to cluster some of these verbs together, with the help of GloVe word embeddings and K-nearest neighbor. In the end, from the whole list of actions, after filtering out non-English words and clustering, we reduce our action set to just 500 words.
 Here are some of the example clusters and their associated verbs:
+
+
 | Cluster Word | Actions                                                       |
 |--------------|---------------------------------------------------------------|
 | abide        | 'govern', 'accord', 'obey', 'conform', 'abide', 'adhere', 'uphold', 'comply' |
@@ -341,8 +343,11 @@ Now, every thing is set for the Decision Tree, where we give it the task of dete
     <img id="zoom-img" src="{{ 'assets/img/plot_decision_trees.png' | relative_url }}" alt="Female Net">
 </div>
 Let's traverse the tree together, to see the decision process. 
-First node is marry, where the cluster represents words:
-```marry', 'remarry', 'divorce', 'childless', 'celibate'```
+First node is ```marry```, where the cluster represents words:
+
+```
+'marry', 'remarry', 'divorce', 'childless', 'celibate'
+```
 
 
 If a character is related to these words, model is likely to guess the character as female, which shows some bias.
@@ -357,7 +362,9 @@ Assuming this is the case, next node is forget, and our words are:
 
 Now, this cluster is a mixture of different words, but arguably, it contains more negative words like kill, swear, steal, fool.
 If a character displays one of these behaviours, decision is shifted into male. If not, our next node is ```winning```, where the words are:
-```'contest', 'reward', 'award', 'winning', 'win', 'prize'```
+```
+'contest', 'reward', 'award', 'winning', 'win', 'prize'
+```
 In this step, our model associates these words with male characters, which is even worse!
 Continuing on, if our character does not perform one of those actions, the last node is ```explain```, which the words are:
 ```
